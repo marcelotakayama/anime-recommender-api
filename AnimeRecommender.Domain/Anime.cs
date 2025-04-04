@@ -1,4 +1,4 @@
-﻿namespace AnimeRecommender.API.Domain
+﻿namespace AnimeRecommender.Domain
 {
     public class Anime
     {

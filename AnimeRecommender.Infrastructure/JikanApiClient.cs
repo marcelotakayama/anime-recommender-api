@@ -1,8 +1,9 @@
-﻿using AnimeRecommender.API.Application;
-using AnimeRecommender.API.Domain;
+﻿using AnimeRecommender.Application;
+using AnimeRecommender.Domain;
+
 using System.Text.Json;
 
-namespace AnimeRecommender.API.Infrastructure
+namespace AnimeRecommender.Infrastructure
 {
     public class JikanApiClient : IAnimeService
     {

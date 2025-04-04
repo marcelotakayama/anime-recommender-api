@@ -1,5 +1,5 @@
-using AnimeRecommender.API.Application;
-using AnimeRecommender.API.Infrastructure;
+using AnimeRecommender.Application;
+using AnimeRecommender.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
