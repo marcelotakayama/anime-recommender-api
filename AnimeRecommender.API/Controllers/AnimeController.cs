@@ -1,4 +1,4 @@
-﻿using AnimeRecommender.Application;
+﻿using AnimeRecommender.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AnimeRecommender.API.Controllers

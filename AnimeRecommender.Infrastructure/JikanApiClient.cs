@@ -1,6 +1,5 @@
-﻿using AnimeRecommender.Application;
-using AnimeRecommender.Domain;
-
+﻿using AnimeRecommender.Application.Interfaces;
+using AnimeRecommender.Domain.Entities;
 using System.Text.Json;
 
 namespace AnimeRecommender.Infrastructure

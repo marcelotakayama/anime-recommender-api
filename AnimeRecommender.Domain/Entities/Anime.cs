@@ -1,4 +1,4 @@
-﻿namespace AnimeRecommender.Domain
+﻿namespace AnimeRecommender.Domain.Entities
 {
     public class Anime
     {
@@ -16,5 +16,5 @@
             Score = score;
             Synopsis = synopsis;
         }
-    } 
-}    
+    }
+}

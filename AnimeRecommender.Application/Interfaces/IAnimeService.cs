@@ -1,7 +1,6 @@
-﻿using AnimeRecommender.Application;
-using AnimeRecommender.Domain;
+﻿using AnimeRecommender.Domain.Entities;
 
-namespace AnimeRecommender.Application
+namespace AnimeRecommender.Application.Interfaces
 {
     public interface IAnimeService
     {

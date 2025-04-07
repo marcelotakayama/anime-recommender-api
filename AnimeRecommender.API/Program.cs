@@ -1,5 +1,10 @@
-using AnimeRecommender.Application;
+using AnimeRecommender.Application.Interfaces;
+using AnimeRecommender.Application.Services;
 using AnimeRecommender.Infrastructure;
+using AnimeRecommender.Infrastructure.Persistence;
+using AnimeRecommender.Infrastructure.Persistence.Repositories;
+
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +13,14 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient<JikanApiClient>();
 builder.Services.AddScoped<IAnimeService, JikanApiClient>();
+
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+
+builder.Services.AddDbContext<AnimeRecommenderDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 var app = builder.Build();
 
