@@ -36,9 +36,9 @@ namespace AnimeRecommender.API.Controllers
                 request.Rg
             );
 
-            _userService.CreateUserAsync(user); // ou como você estiver salvando no banco
+            _userService.CreateUserAsync(user); 
 
-            return Ok(user); // ou return CreatedAtAction(...) se preferir
+            return Ok(user); 
         }
 
         [HttpPut("{id}")]

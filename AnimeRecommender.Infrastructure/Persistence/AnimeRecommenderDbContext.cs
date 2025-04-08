@@ -13,6 +13,7 @@ namespace AnimeRecommender.Infrastructure.Persistence
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<FavoriteAnime> FavoriteAnimes { get; set; }
 
         // Se quiser, já pode adicionar outros DbSets aqui no futuro:
         // public DbSet<Anime> Animes { get; set; }

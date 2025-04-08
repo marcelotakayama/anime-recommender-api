@@ -26,7 +26,6 @@ namespace AnimeRecommender.Application.Services
 
         public Task UpdateUserAsync(User user) => _repository.UpdateAsync(user);
 
-
         public Task DeleteUserAsync(Guid id) => _repository.DeleteAsync(id);
     }
 
