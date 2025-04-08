@@ -18,5 +18,12 @@ bld/
 [Bb]in/
 [Oo]bj/
 
+# Test coverage outputs
+TestResults/
+coverage*
+*.coverage.xml
+*.lcov
+coveragereport/
+
 # Visual Studio
 .vs/
